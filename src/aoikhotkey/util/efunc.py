@@ -2,7 +2,7 @@
 """
 This module contains event functions.
 """
-from __future__ import absolute_import
+
 
 # Standard imports
 import sys

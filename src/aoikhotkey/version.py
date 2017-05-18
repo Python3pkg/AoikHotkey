@@ -2,7 +2,7 @@
 """
 This module contains version.
 """
-from __future__ import absolute_import
+
 
 
 # Version

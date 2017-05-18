@@ -2,7 +2,7 @@
 """
 This module contains hotkey trigger function that sends notifications to Growl.
 """
-from __future__ import absolute_import
+
 
 # Standard imports
 import sys

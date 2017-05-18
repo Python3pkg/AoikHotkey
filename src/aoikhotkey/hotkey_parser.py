@@ -2,7 +2,7 @@
 """
 This module contains hotkey parse function.
 """
-from __future__ import absolute_import
+
 
 # Standard imports
 from copy import copy
@@ -80,7 +80,7 @@ def _dict_swap_kv(dict_obj):
     :return: New dict with key-value pairs swapped.
     """
     # Swap given dict's keys and values
-    return dict((x[1], x[0]) for x in dict_obj.items())
+    return dict((x[1], x[0]) for x in list(dict_obj.items()))
 
 
 def _extend_short_names(name_to_vk_map, keep_orig=True):
@@ -103,7 +103,7 @@ def _extend_short_names(name_to_vk_map, keep_orig=True):
     res_dict = {}
 
     # For given `name to virtual key` map's each item
-    for name, vk in name_to_vk_map.items():
+    for name, vk in list(name_to_vk_map.items()):
         # If need keep original names
         if keep_orig:
             # Add the original name to the result dict

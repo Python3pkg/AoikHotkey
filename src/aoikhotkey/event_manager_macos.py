@@ -2,7 +2,7 @@
 """
 This module contains event manager for MacOS platform.
 """
-from __future__ import absolute_import
+
 
 # Standard imports
 import sys

@@ -2,7 +2,7 @@
 """
 This module contains hotkey functions and utility.
 """
-from __future__ import absolute_import
+
 
 # Standard imports
 from functools import partial

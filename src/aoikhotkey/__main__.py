@@ -7,7 +7,7 @@ This module is named ``__main__.py`` so that the program can be run via:
 
     python -m aoikhotkey
 """
-from __future__ import absolute_import
+
 
 # Standard imports
 import os.path
@@ -199,7 +199,7 @@ def main(args=None):
     print('----- sys.path -----')
 
     # Print paths in `sys.path`
-    print('\n'.join(sys.path))
+    print(('\n'.join(sys.path)))
 
     # Print title
     print('===== sys.path =====')

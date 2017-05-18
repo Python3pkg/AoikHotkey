@@ -2,7 +2,7 @@
 """
 This module contains keyboard-related hotkey functions for Windows platform.
 """
-from __future__ import absolute_import
+
 
 # Internal imports
 from aoikhotkey.const import EMASK_V_EFUNC

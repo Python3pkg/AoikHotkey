@@ -39,7 +39,7 @@ except NameError:
 try:
     import builtins as __builtin__
 except ImportError:
-    import __builtin__
+    import builtins
 
 def _swig_setattr_nondynamic(self, class_type, name, value, static=1):
     if (name == "thisown"):
@@ -76,14 +76,14 @@ def _swig_getattr(self, class_type, name):
 def _swig_repr(self):
     try:
         strthis = "proxy of " + self.this.__repr__()
-    except __builtin__.Exception:
+    except builtins.Exception:
         strthis = ""
     return "<%s.%s; %s >" % (self.__class__.__module__, self.__class__.__name__, strthis,)
 
 try:
     _object = object
     _newclass = 1
-except __builtin__.Exception:
+except builtins.Exception:
     class _object:
         pass
     _newclass = 0

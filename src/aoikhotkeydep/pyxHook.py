@@ -91,7 +91,7 @@ class HookManager(threading.Thread):
             print("RECORD extension not found")
             sys.exit(1)
         r = self.record_dpy.record_get_version(0, 0)
-        print("RECORD extension version %d.%d" % (r.major_version, r.minor_version))
+        print(("RECORD extension version %d.%d" % (r.major_version, r.minor_version)))
 
         # Create a recording context; we only want key and mouse events
         self.ctx = self.record_dpy.record_create_context(
@@ -257,7 +257,7 @@ class HookManager(threading.Thread):
         grabbed_keycode_set = set()
 
         # For each key definition in `XK` module
-        for key_name, keysym in vars(XK).items():
+        for key_name, keysym in list(vars(XK).items()):
             # If the key name starts with `XK_`
             if key_name.startswith('XK_'):
                 # Convert keysym to key code

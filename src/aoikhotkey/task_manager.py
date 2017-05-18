@@ -2,7 +2,7 @@
 """
 This module contains task manager.
 """
-from __future__ import absolute_import
+
 
 # Standard imports
 from multiprocessing.pool import ThreadPool

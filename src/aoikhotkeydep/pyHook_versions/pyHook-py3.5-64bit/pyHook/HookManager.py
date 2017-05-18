@@ -87,7 +87,7 @@ class HookConstants:
   'VK_PACKET' : 0xE7}
 
   #inverse mapping of keycodes
-  id_to_vk = dict([(v,k) for k,v in vk_to_id.items()])
+  id_to_vk = dict([(v,k) for k,v in list(vk_to_id.items())])
 
   #message constants to message names
   msg_to_name = {WM_MOUSEMOVE : 'mouse move', WM_LBUTTONDOWN : 'mouse left down',

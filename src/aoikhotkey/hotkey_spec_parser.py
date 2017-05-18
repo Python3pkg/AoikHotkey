@@ -2,7 +2,7 @@
 """
 This module contains hotkey spec parse function.
 """
-from __future__ import absolute_import
+
 
 # Standard imports
 import os.path

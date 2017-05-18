@@ -2,7 +2,7 @@
 """
 This module contains arguments parser.
 """
-from __future__ import absolute_import
+
 
 # Standard imports
 from argparse import ArgumentParser

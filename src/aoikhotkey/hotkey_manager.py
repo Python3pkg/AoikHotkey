@@ -2,7 +2,7 @@
 """
 This module contains hotkey manager.
 """
-from __future__ import absolute_import
+
 
 # Standard imports
 from collections import OrderedDict
@@ -392,7 +392,7 @@ class HotkeyManager(object):
             assert 0, pattern
 
         # Print parsed hotkeys
-        print('Hotkey: {0} -> VK: {1}'.format(pattern, hotkey_s))
+        print(('Hotkey: {0} -> VK: {1}'.format(pattern, hotkey_s)))
 
         # Convert virtual key lists to virtual key tuples
         hotkey_tuple_s = [
@@ -954,7 +954,7 @@ class HotkeyManager(object):
 
         # For the map's each key-sequence
         for hotseq, hotkey_info in \
-                self._hotkey_info_by_vk_map_for_key_seq.items():
+                list(self._hotkey_info_by_vk_map_for_key_seq.items()):
             # Get the key-sequence's length
             hotseq_len = len(hotseq)
 

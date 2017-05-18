@@ -1,3 +1,4 @@
+import collections
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
@@ -453,7 +454,7 @@ def autodoc_skip_member(app, what, name, obj, skip, options):
         return True
 
     # If given object is callable
-    if callable(obj):
+    if isinstance(obj, collections.Callable):
         # Not skip the object
         return False
 

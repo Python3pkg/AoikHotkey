@@ -2,7 +2,7 @@
 """
 This module contains event manager for X11 platform.
 """
-from __future__ import absolute_import
+
 
 # External imports
 from pyxHook import HookManager

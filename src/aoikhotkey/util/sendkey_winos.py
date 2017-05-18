@@ -2,7 +2,7 @@
 """
 This module contains utility for sending key events for Windows platform.
 """
-from __future__ import absolute_import
+
 
 # Standard imports
 import ctypes

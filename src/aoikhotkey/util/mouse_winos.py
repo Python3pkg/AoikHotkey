@@ -4,7 +4,7 @@
 """
 This module contains mouse utility for Windows platform.
 """
-from __future__ import absolute_import
+
 
 # Standard imports
 import ctypes

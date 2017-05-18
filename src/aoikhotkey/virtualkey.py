@@ -2,7 +2,7 @@
 """
 This module contains virtual keys.
 """
-from __future__ import absolute_import
+
 
 
 # ----- Windows virtual keys -----
@@ -198,7 +198,7 @@ VK_MOUSE_WHEEL = 522
 
 # Map name to Windows virtual key
 MAP_NAME_TO_WIN_VK = dict(
-    (k, v) for k, v in globals().items() if k.startswith('VK_')
+    (k, v) for k, v in list(globals().items()) if k.startswith('VK_')
 )
 
 
@@ -211,7 +211,7 @@ def _dict_swap_kv(dict_obj):
     :return: New dict with key-value pairs swapped.
     """
     # Swap given dict's keys and values
-    return dict((x[1], x[0]) for x in dict_obj.items())
+    return dict((x[1], x[0]) for x in list(dict_obj.items()))
 
 
 # Map character to Windows virtual key
@@ -591,7 +591,7 @@ KVK_UPARROW = 0X7E
 
 # Map name to MacOS virtual key
 MAP_NAME_TO_MAC_VK = dict(
-    (k, v) for k, v in globals().items() if k.startswith('KVK_')
+    (k, v) for k, v in list(globals().items()) if k.startswith('KVK_')
 )
 
 

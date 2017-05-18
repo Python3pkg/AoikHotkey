@@ -2,7 +2,7 @@
 """
 This mediator module puts together other modules to implement the program.
 """
-from __future__ import absolute_import
+
 
 # Standard imports
 import sys
@@ -285,9 +285,9 @@ def main_inner(args=None):
             # like `recovery_mode_hotkey_parse` has bug.
             while True:
                 # Get user input
-                user_input = input(
+                user_input = eval(input(
                     'Enter r to enter recovery mode, q to quit: '
-                )
+                ))
 
                 # Strip white-spaces
                 user_input = user_input.strip()

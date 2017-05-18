@@ -2,7 +2,7 @@
 """
 This module contains event manager for the current platform.
 """
-from __future__ import absolute_import
+
 
 # Local imports
 from .compat import IS_LINUX

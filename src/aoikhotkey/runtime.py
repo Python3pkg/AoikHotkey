@@ -2,7 +2,7 @@
 """
 This module contains runtime states.
 """
-from __future__ import absolute_import
+
 
 
 # This variable is set by mediator module at 2STYZ
